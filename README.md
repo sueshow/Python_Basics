@@ -53,7 +53,7 @@ print('My name is %s and weight is %d kg!' % ('Zara', 21))
 ## 列表(List)
 * `append()`：新增 list 元素
 * `del()`：刪除 list 元素
-* + 用於組合，* 用於重複
+* `+`：用於組合，`*`：用於重複
 ```
 test=[]                 ## 空列表
 test.append('1991')     ## 使用 append() 新增元素
