@@ -96,8 +96,84 @@ print(r[-1])
 ```
 <br>
 
-## 集合(Set)：08
+## 集合(Set)：
+```
+x = set('runoob')
+y = set('google')
+print(x & y)  # 交集
+print(x | y)  # 並集
+print(x - y)  # 差集
+```
 <br>
+
+## 字典(Dictionaries)：
+* 字典的每個鍵值 key、value 對用冒號 `:` 分割，每個鍵值對之間用逗號 `,` 分割，整個字典包括在括號 `{}` 中，如dict1 ={key1:value1,key2:value2}
+* 能刪單一的元素，也能清空字典
+* key 
+  * 唯一的：不允許同一個 key 出現兩次。如果同一個 key 給兩次 value，後一個 value 會被記住
+  * 不可變，型態可為字符串、數字、元組
+* value 
+  * 不需唯一
+  * 型態可取任何數值類型
+```
+dict = {'Name': 'Soren', 'Age': 1000, 'Class': 'apple'}
+ 
+print("dict['Name']:",dict['Name'])
+print("dict['Age']:",dict['Age'])
+
+del dict['Name']  
+print(dict)
+
+dict.clear() 
+print(dict) 
+```
+<br>
+
+## 條件語法(If-else)
+* 任何非 0 和非空 (null) 值爲true，0 或者 null爲false
+* 形式爲：
+```
+if 判斷條件1:
+    執行語句1……
+elif 判斷條件2:
+    執行語句2……
+elif 判斷條件3:
+    執行語句3……
+else:
+    執行語句4……
+```
+<br>
+
+
+## 迴圈(While)
+* 用於循環執行程序，即在某條件下，循環執行某段程序，以處理需要重複處理的相同任務
+* 重要的命令：`continue`用於跳過該次循環，`break`則是用於退出循環
+* "判斷條件"可以是常值，表示循環必定成立
+* 形式爲：
+```
+while(繼續條件):
+   當條件成立時，會執行的程式
+```
+```
+i = 1
+while i < 10:   
+    i += 1
+    if(i%2)> 0:     # 非雙數時跳過輸出
+        continue
+    print('pass!!')
+    print(i)         # 輸出雙數2、4、6、8、10
+ 
+j = 1
+while 1:            # 循環條件爲1必定成立
+    print(j)         # 輸出1~10
+    j += 1
+    if j > 5:     # 當i大於10時跳出循環
+        break
+print('end')
+```
+<br>
+
+## 迴圈(for)12
 
 
 * \(在行尾時)	續行符
