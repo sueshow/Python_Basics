@@ -28,8 +28,14 @@ print('更新字符串: ', var1[:6]+'Basic!')
 print('L' in var01)
 print('l' in var01)
 ```
-
 <br>
+
+* 在 Python 中，字符串格式化使用與 C 中 sprintf 函數一樣的語法
+```
+print("My name is %s and weight is %d kg!" % ('Zara', 21)) 
+```
+
+
 * \(在行尾時)	續行符
 * \\	反斜槓符號
 * \'	單引號
