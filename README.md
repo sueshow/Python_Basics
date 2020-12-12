@@ -54,6 +54,7 @@ print('My name is %s and weight is %d kg!' % ('Zara', 21))
 * `append()`：新增 list 元素
 * `del()`：刪除 list 元素
 * `+`：用於組合，`*`：用於重複
+* `reverse()`：反序
 ```
 test=[]                 ## 空列表
 test.append('1991')     ## 使用 append() 新增元素
@@ -66,10 +67,39 @@ print(test)
 <br>
 
 ## 元組(Tuple)
+* tuple 的元素值不可以修改、刪除
+* 結構簡單，資料型態的大小比 list 小
+```
+test = ()               ## 空元組
 
+listA = list(range(1000))
+tupleA = tuple(range(1000))
 
+print ("list 資料大小：", listA.__sizeof__())
+print ("tuple 資料大小：", tupleA.__sizeof__())
+```
+<br>
 
+## 範圍(Range)：
+* Range 內的元素是不可變的，且可使用索引，通常用於迴圈(Loop)
+* 語法：range(start, stop, step)
+  * start：計數從 start 為起點。如果沒有數字就是從0開始
+  * stop：計數到 stop 為終點，但不包括 stop 的數字。
+  * step：移動步長，沒有數字就視為 1
+```
+r = range(0,10,2)
+print(r)
+print(list(r))
+print(2 in r)
+print(r.index(2))
+print(r[3])
+print(r[:3])
+print(r[-1])
+```
+<br>
 
+## 集合(Set)：08
+<br>
 
 
 * \(在行尾時)	續行符
