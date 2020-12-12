@@ -32,7 +32,7 @@ print('l' in var01)
 
 * 在 Python 中，字符串格式化使用與 C 中 sprintf 函數一樣的語法
 ```
-print("My name is %s and weight is %d kg!" % ('Zara', 21)) 
+print('My name is %s and weight is %d kg!' % ('Zara', 21)) 
 ```
 
 
