@@ -75,8 +75,8 @@ test = ()               ## 空元組
 listA = list(range(1000))
 tupleA = tuple(range(1000))
 
-print ("list 資料大小：", listA.__sizeof__())
-print ("tuple 資料大小：", tupleA.__sizeof__())
+print ('list 資料大小：', listA.__sizeof__())
+print ('tuple 資料大小：', tupleA.__sizeof__())
 ```
 <br>
 
@@ -118,8 +118,8 @@ print(x - y)  # 差集
 ```
 dict = {'Name': 'Soren', 'Age': 1000, 'Class': 'apple'}
  
-print("dict['Name']:",dict['Name'])
-print("dict['Age']:",dict['Age'])
+print('dict['Name']:',dict['Name'])
+print('dict['Age']:',dict['Age'])
 
 del dict['Name']  
 print(dict)
