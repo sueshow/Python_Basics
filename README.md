@@ -18,6 +18,7 @@
 ## 字串(String)
 * 單字符在 Python 作爲一個字符串使用
 * 訪問子字符串，可使用方括號來截取字符串
+* + 用於組合，* 用於重複
 ```
 var01 = 'Hello World!'
 var02 = 'Python Basic'
@@ -50,6 +51,27 @@ print('My name is %s and weight is %d kg!' % ('Zara', 21))
 <br>
 
 ## 列表(List)
+* `append()`：新增 list 元素
+* `del()`：刪除 list 元素
+* + 用於組合，* 用於重複
+```
+test=[]                 ## 空列表
+test.append('1991')     ## 使用 append() 新增元素
+test.append('Python')
+print(test)
+
+del(test[0])
+print(test)
+```
+<br>
+
+## 元組(Tuple)
+
+
+
+
+
+
 * \(在行尾時)	續行符
 * \\	反斜槓符號
 * \'	單引號
