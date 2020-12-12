@@ -49,6 +49,7 @@ print('My name is %s and weight is %d kg!' % ('Zara', 21))
 ```
 <br>
 
+## 列表(List)
 * \(在行尾時)	續行符
 * \\	反斜槓符號
 * \'	單引號
