@@ -207,14 +207,6 @@ def functionname( parameters ):
    function_suite
    return [expression]
 ```
-```
-def sum( arg1, arg2 ):
-   total = arg1 + arg2
-   print('函數內 : ',total)
-   return(total)
- 
-total = sum( 10, 20 )
-```
 <br>
 
 * 參數類型：
