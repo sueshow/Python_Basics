@@ -7,10 +7,12 @@
 <br>
 
 ## 可變(mutable)與不可變(immutable)
-* 不可變：int、float、bool、numbers、string、tuple、unicode
+* 不可變：int(整數)、float、bool、numbers、string(字串)、tuple(元組)、unicode
   * 變量 a=5 後，再給定 a=10，這裏實際上是新生成一個 int 值對象 10，再讓 a 指向它，而 5 被丟棄，而不是改變 a 的值，相當於新生成 a
+  * 類似 c++ 的值傳遞
 * 可變：list、set、dict
   * 變量 la=[1,2,3,4] 後，再給定 la[2]=5 ，是將 list la 的第三個元素值更改，本身 la 沒有動，只是其內部的一部分值被修改
+  * 類似 c++ 的引用傳遞
 * 語法
   * `id()`：一個變數的地址
   * `type()`：每個變數的型別，不同的型別存放的資料也不同，如：int存放整數、float存放浮點數、list存放陣列等等...
@@ -18,8 +20,8 @@
 <br>
 
 ## 字串(String)
-* 單字符在 Python 作爲一個字符串使用
-* 訪問子字符串，可使用方括號來截取字符串
+* 單字串在 Python 作爲一個字串使用
+* 訪問子字串，可使用方括號來截取字串
 * `+` 用於組合，`*` 用於重複
 ```
 var01 = 'Hello World!'
@@ -27,15 +29,15 @@ var02 = 'Python Basic'
  
 print('var01[0]: ', var01[0])
 print('var02[1:5]: ', var02[1:5])
-print('更新字符串: ', var1[:6]+'Basic!')
+print('更新字串: ', var1[:6]+'Basic!')
 print('L' in var01)
 print('l' in var01)
 ```
 <br>
 
-* 在 Python 中，字符串格式化使用與 C 中 sprintf 函數一樣的語法
-  * %c：格式化字符及其 ASCII 碼
-  * %s：格式化字符串
+* 在 Python 中，字串格式化使用與 C 中 sprintf 函數一樣的語法
+  * %c：格式化字串及其 ASCII 碼
+  * %s：格式化字串
   * %d：格式化整數
   * %u：格式化無符號整型
   * %o：格式化無符號八進位數
@@ -116,7 +118,7 @@ print(x - y)  # 差集
 * 能刪單一的元素，也能清空字典
 * key 
   * 唯一的：不允許同一個 key 出現兩次。如果同一個 key 給兩次 value，後一個 value 會被記住
-  * 不可變，型態可為字符串、數字、元組
+  * 不可變，型態可為字串、數字、元組
 * value 
   * 不需唯一
   * 型態可取任何數值類型
@@ -204,6 +206,9 @@ for num in range(0,20):   # 疊代 0 到 20 之間的數字
 def functionname( parameters ):
    function_suite
    return [expression]
+```
+```
+
 ```
 <br>
 
