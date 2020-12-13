@@ -208,11 +208,66 @@ def functionname( parameters ):
    return [expression]
 ```
 ```
-
+def sum( arg1, arg2 ):
+   total = arg1 + arg2
+   print('函數內 : ',total)
+   return(total)
+ 
+total = sum( 10, 20 )
 ```
 <br>
 
+* 參數類型：
+  * 必備參數：以正確的順序傳入函數
+  * 關鍵字參數：使用關鍵字參數允許函數時，參數的順序與聲明時不一致
+  * 默認參數：默認參數的值如果沒有傳入，則被認爲是默認值
+  * 不定長參數：形式如下
+```
+def functionname([formal_args,] *var_args_tuple ):
+   function_suite
+   return [expression]
+```
+```
+def printinfo( prm1, *vartuple ):
+   print(prm1)
+   for var in vartuple:
+      print(var)
+   return
+ 
+printinfo(10)
 
+printinfo(70,60,50)
+```
+<br>
+
+* 匿名函數
+  * 使用 lambda 來創建匿名函數
+  * 形式：
+```
+lambda [arg1 [,arg2,.....argn]]:expression
+```
+```
+sum = lambda arg1, arg2: arg1 + arg2;
+
+print('相加後的值爲 : ', sum( 10, 20 ))
+print('相加後的值爲 : ', sum( 20, 20 ))
+```
+<br>
+
+* 全域變數和區域變數
+  * 定義在函數內部的變量擁有一個區域作用域，定義在函數外的擁有全域作用域
+```
+total = 0                                 # 這是一個全域變數
+
+def sum( prm1, prm2 ):
+   total = prm1 + prm2                    # total在這裏是區域變數.
+   print('函數內是區域變數: ',total)
+   return total
+ 
+sum(10,20);
+print('函數外是全域變數 : ',total)
+```
+<br>
 
 
 * \(在行尾時)	續行符
