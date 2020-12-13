@@ -36,7 +36,7 @@ print('l' in var01)
 <br>
 
 * 常用：
-  1. 字符串對象的 `rjust()` 可將字符串靠右，並在左邊填充空格，類似的方法如 `ljust()`、`center()`、`zfill()`：在數字的左邊填充 0
+1. 字符串對象的 `rjust()` 可將字符串靠右，並在左邊填充空格，類似的方法如 `ljust()`、`center()`、`zfill()`：在數字的左邊填充 0
 ```
 for x in range(1, 11):
   print(repr(x).rjust(2), repr(x*x).rjust(3), end=' ')
@@ -45,7 +45,7 @@ for x in range(1, 11):
 ```
 <br>
 
-  2. 括號及其裏面的字串將會被 `format()` 中的參數替換
+2. 括號及其裏面的字串將會被 `format()` 中的參數替換
 ```
 print('{0} 和 {1}'.format('Google', 'Intel'))
 print('{1} 和 {0}'.format('Google', 'Intel'))
@@ -54,9 +54,9 @@ print('{name}位置： {address}'.format(name='Jamie', address='Taiwan/Taipei'))
 ```
 <br>
 
-  3. !a (使用 `ascii()`), !s (使用 `str()`) 和 !r (使用 `repr()`) 可以用於在格式化某個值之前對其進行轉化
-  4. {0:.3f}：小數點後三位
-  5. 使用方括號 [] 來訪問鍵值
+3. !a (使用 `ascii()`), !s (使用 `str()`) 和 !r (使用 `repr()`) 可以用於在格式化某個值之前對其進行轉化
+4. {0:.3f}：小數點後三位
+5. 使用方括號 [] 來訪問鍵值
 ```
 import math
 print('數學pi的值近似爲： {!r}。'.format(math.pi))
@@ -69,7 +69,7 @@ print('March: {March:d}; August: {August:d}; July: {July:d}'.format(**table))
 ```
 <br>
 
-  6. 輸入
+6. 輸入
 ```
 str1 = input("請輸入：");
 print ("你輸入的內容是: ", str1)
@@ -239,7 +239,7 @@ for num in range(0,20):   # 疊代 0 到 20 之間的數字
 ```
 <br>
 
-## 函式(function) 13
+## 函式(function)
 * 提高應用的模塊性
 * 代碼的重複利用率
 * 形式：
@@ -301,7 +301,75 @@ print('函數外是全域變數 : ',total)
 ```
 <br>
 
+## 類別(class)
+* Python 是物件導向的程式語言 (Object-oriented programming)
+* 具有屬性與方法
+1. 基本屬性
+```
+# 建構一個 family 類別
+class family():
+  # 函式 __init__ 會自動執行
+  def __init__(self,name,age):
+    # self是class本身,所以第一個不用更動,而這邊新增兩個屬性,一個是名字,另一個是年齡
+    self.name = name
+    self.age = age
+    
+Amy = family('Amy',17)
+print(Amy.name)
+print(Amy.age)
 
+# 可以透過這樣修改實體的屬性
+Amy.age = 18
+print(Amy.age)
+```
+<br>
+
+2. 取用自己的方法
+```
+class Human:
+    def __init__(self,h=0,w=0):
+      # 可在參數後面帶值
+        self.height=h
+        self.weight=w
+    def BMI(self):
+        return self.weight / ((self.height/100)**2)
+
+steve = Human() 
+# 這樣即使在宣告的時候沒有帶參數也可以建立一個實體
+print(steve.height)
+print(steve.height)
+      
+luffy = Human(180,80)
+print(luffy.BMI())
+```
+<br>
+
+3.繼承：建構類別的時候透過 super().__ init__() 帶入父類別
+```
+class Woman(Human):
+  def __init__(self,h,w,bust=0,waist=0,hip=0):
+    super().__init__(h,w)
+```
+```
+# 'Human' 有的屬性及方法會被 'Woman' 繼承
+class Woman(Human):
+    def __init__(self,h,w,bust=0,waist=0,hip=0):
+        super().__init__(h,w)
+        self.bust=bust
+        self.waist=waist
+        self.hip=hip
+    def printBWH(self):
+        print('bust= {},waist= {},hip= {}'.format(self.bust,self.waist,self.hip))
+        
+nana = Woman(165,54,83,64,84)
+# 父類別 的方法 BMI()
+print(nana.BMI())
+# 子類別 的方法 printBWH()
+nana.printBWH()
+```
+<br>
+
+## 備註
 * \(在行尾時)	續行符
 * \\	反斜槓符號
 * \'	單引號
