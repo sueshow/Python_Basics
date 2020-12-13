@@ -6,9 +6,11 @@
 * 邏輯運算：`==`、`>=`、`<=`、`!=`
 <br>
 
-## 可變與不可變物件
-* 不可變：int、float、bool、string、tuple、unicode
+## 可變(mutable)與不可變(immutable)
+* 不可變：int、float、bool、numbers、string、tuple、unicode
+  * 變量 a=5 後，再給定 a=10，這裏實際上是新生成一個 int 值對象 10，再讓 a 指向它，而 5 被丟棄，而不是改變 a 的值，相當於新生成 a
 * 可變：list、set、dict
+  * 變量 la=[1,2,3,4] 後，再給定 la[2]=5 ，是將 list la 的第三個元素值更改，本身 la 沒有動，只是其內部的一部分值被修改
 * 語法
   * `id()`：一個變數的地址
   * `type()`：每個變數的型別，不同的型別存放的資料也不同，如：int存放整數、float存放浮點數、list存放陣列等等...
@@ -83,7 +85,7 @@ print ('tuple 資料大小：', tupleA.__sizeof__())
 ## 範圍(Range)：
 * Range 內的元素是不可變的，且可使用索引，通常用於迴圈(Loop)
 * 語法：range(start, stop, step)
-  * start：計數從 start 為起點。如果沒有數字就是從0開始
+  * start：計數從 start 為起點。如果沒有數字就是從 0 開始
   * stop：計數到 stop 為終點，但不包括 stop 的數字。
   * step：移動步長，沒有數字就視為 1
 ```
@@ -93,6 +95,9 @@ print(list(r))
 print(r.index(2))
 print(r[:3])
 print(r[-1])
+
+state = ['New Jersey', 'Nevada', 'Montana']
+range(len(state))
 ```
 <br>
 
@@ -149,7 +154,7 @@ else:
 * 用於循環執行程序，即在某條件下，循環執行某段程序，以處理需要重複處理的相同任務
 * 重要的命令：`continue`用於跳過該次循環，`break`則是用於退出循環
 * "判斷條件"可以是常值，表示循環必定成立
-* 形式爲：
+* 形式：
 ```
 while(繼續條件):
    當條件成立時，會執行的程式
@@ -173,7 +178,36 @@ print('end')
 ```
 <br>
 
-## 迴圈(for)12
+## 迴圈(for)
+* 形式：
+```
+for iterating_var in sequence:
+   statements(s)
+```
+```
+for num in range(0,20):   # 疊代 0 到 20 之間的數字
+   for i in range(2,num): # 根據因子疊代
+      if num%i == 0:      # 確定第一個因子
+         j=num/i          # 計算第二個因子
+         print('%d 等於 %d * %d' % (num,i,j))
+         break            # 跳出當前循環
+   else:                  # 循環的 else 部分
+      print(num, '是一個質數')
+```
+<br>
+
+## 函式(function) 13
+* 提高應用的模塊性
+* 代碼的重複利用率
+* 形式：
+```
+def functionname( parameters ):
+   function_suite
+   return [expression]
+```
+<br>
+
+
 
 
 * \(在行尾時)	續行符
