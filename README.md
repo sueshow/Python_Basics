@@ -227,7 +227,6 @@ def printinfo( prm1, *vartuple ):
    return
  
 printinfo(10)
-
 printinfo(70,60,50)
 ```
 <br>
