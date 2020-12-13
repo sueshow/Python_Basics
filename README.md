@@ -35,6 +35,47 @@ print('l' in var01)
 ```
 <br>
 
+* 常用：
+  1. 字符串對象的 `rjust()` 可將字符串靠右，並在左邊填充空格，類似的方法如 `ljust()`、`center()`、`zfill()`：在數字的左邊填充 0
+```
+for x in range(1, 11):
+  print(repr(x).rjust(2), repr(x*x).rjust(3), end=' ')
+  # 注意前一行 'end' 的使用
+  print(repr(x*x*x).rjust(4))
+```
+<br>
+
+  2. 括號及其裏面的字串將會被 `format()` 中的參數替換
+```
+print('{0} 和 {1}'.format('Google', 'Intel'))
+print('{1} 和 {0}'.format('Google', 'Intel'))
+
+print('{name}位置： {address}'.format(name='Jamie', address='Taiwan/Taipei'))
+```
+<br>
+
+  3. !a (使用 `ascii()`), !s (使用 `str()`) 和 !r (使用 `repr()`) 可以用於在格式化某個值之前對其進行轉化
+  4. {0:.3f}：小數點後三位
+  5. 使用方括號 [] 來訪問鍵值
+```
+import math
+print('數學pi的值近似爲： {!r}。'.format(math.pi))
+print('pi近似值爲 {0:.3f}。'.format(math.pi))
+```
+```
+table = {'August': 8, 'March': 3, 'July': 7}
+print('March: {0[March]:d}; August: {0[August]:d}; July: {0[July]:d}'.format(table))
+print('March: {March:d}; August: {August:d}; July: {July:d}'.format(**table))
+```
+<br>
+
+  6. 輸入
+```
+str1 = input("請輸入：");
+print ("你輸入的內容是: ", str1)
+```
+<br>
+
 * 在 Python 中，字串格式化使用與 C 中 sprintf 函數一樣的語法
   * %c：格式化字串及其 ASCII 碼
   * %s：格式化字串
