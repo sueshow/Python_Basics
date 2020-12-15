@@ -54,7 +54,7 @@ print('{0} 和 {1}'.format('Google', 'Intel'))
 print('{1} 和 {0}'.format('Google', 'Intel'))
 
 print('{name}位置： {address}'.format(name='Jamie', address='Taiwan/Taipei'))
-```th
+```
 <br>
 
 3. !a (使用 `ascii()`), !s (使用 `str()`) 和 !r (使用 `repr()`) 可以用於在格式化某個值之前對其進行轉化
