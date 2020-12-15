@@ -8,10 +8,10 @@
 
 ## 可變(mutable)與不可變(immutable)
 * 不可變：int(整數)、float、bool、numbers、string(字串)、tuple(元組)、unicode
-  * 變量 a=5 後，再給定 a=10，這裏實際上是新生成一個 int 值對象 10，再讓 a 指向它，而 5 被丟棄，而不是改變 a 的值，相當於新生成 a
+  * 變量 `a=5` 後，再給定 a=10，這裏實際上是新生成一個 int 值對象 10，再讓 a 指向它，而 5 被丟棄，而不是改變 a 的值，相當於新生成 a
   * 類似 c++ 的值傳遞
 * 可變：list、set、dict
-  * 變量 la=[1,2,3,4] 後，再給定 la[2]=5 ，是將 list la 的第三個元素值更改，本身 la 沒有動，只是其內部的一部分值被修改
+  * 變量 `la=[1,2,3,4]` 後，再給定 `la[2]=5` ，是將 list la 的第三個元素值更改，本身 la 沒有動，只是其內部的一部分值被修改
   * 類似 c++ 的引用傳遞
 * 語法
   * `id()`：一個變數的地址
@@ -29,13 +29,15 @@ var02 = 'Python Basic'
  
 print('var01[0]: ', var01[0])
 print('var02[1:5]: ', var02[1:5])
-print('更新字串: ', var1[:6]+'Basic!')
+print('更新字串: ', var01[:6]+'Basic!')
 print('L' in var01)
 print('l' in var01)
 ```
 > var01[0]: H <br>
 > var02[1:5]: ytho <br>
-> 更新字串: <br>
+> 更新字串: Hello Basic! <br>
+> False <br>
+> True <br>
 <br>
 
 * 常用：
@@ -46,6 +48,16 @@ for x in range(1, 11):
   # 注意前一行 'end' 的使用
   print(repr(x*x*x).rjust(4))
 ```
+> 1   1    1 <br>
+> 2   4    8 <br>
+> 3   9   27 <br>
+> 4  16   64 <br>
+> 5  25  125 <br>
+> 6  36  216 <br>
+> 7  49  343 <br>
+> 8  64  512 <br>
+> 9  81  729 <br>
+>10 100 1000 <br>
 <br>
 
 2. 括號及其裏面的字串將會被 `format()` 中的參數替換
@@ -55,6 +67,9 @@ print('{1} 和 {0}'.format('Google', 'Intel'))
 
 print('{name}位置： {address}'.format(name='Jamie', address='Taiwan/Taipei'))
 ```
+> Google 和 Intel <br>
+> Intel 和 Google <br>
+> Jamie位置： Taiwan/Taipei <br>
 <br>
 
 3. !a (使用 `ascii()`), !s (使用 `str()`) 和 !r (使用 `repr()`) 可以用於在格式化某個值之前對其進行轉化
@@ -65,11 +80,15 @@ import math
 print('數學pi的值近似爲： {!r}。'.format(math.pi))
 print('pi近似值爲 {0:.3f}。'.format(math.pi))
 ```
+> 數學pi的值近似爲： 3.141592653589793 <br>
+> pi近似值爲 3.142 <br>
 ```
 table = {'August': 8, 'March': 3, 'July': 7}
 print('March: {0[March]:d}; August: {0[August]:d}; July: {0[July]:d}'.format(table))
 print('March: {March:d}; August: {August:d}; July: {July:d}'.format(**table))
 ```
+> March: 3; August: 8; July: 7 <br>
+> March: 3; August: 8; July: 7 <br>
 <br>
 
 6. 輸入
