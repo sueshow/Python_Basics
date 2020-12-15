@@ -5,7 +5,7 @@
 * 常見的運算： `/` 為直接相除、 `//` 為取商、 `%` 為取餘數
 * 邏輯運算：`==`、`>=`、`<=`、`!=`
 <br>
-Back to [Python_Basics](#Python_Basics)
+Back to ![Python_Basics](#Python_Basics)
 <br>
 
 ## 可變(mutable)與不可變(immutable)
@@ -20,7 +20,7 @@ Back to [Python_Basics](#Python_Basics)
   * `type()`：每個變數的型別，不同的型別存放的資料也不同，如：int存放整數、float存放浮點數、list存放陣列等等...
   * `pop()`：把陣列的最後一個物件丟掉
 <br>
-Back to [Python_Basics](#Python_Basics)
+Back to ![Python_Basics](#Python_Basics)
 <br>
 
 ## 字串(String)
