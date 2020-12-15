@@ -5,6 +5,8 @@
 * 常見的運算： `/` 為直接相除、 `//` 為取商、 `%` 為取餘數
 * 邏輯運算：`==`、`>=`、`<=`、`!=`
 <br>
+Back to [Python_Basics](#Python_Basics)
+<br>
 
 ## 可變(mutable)與不可變(immutable)
 * 不可變：int(整數)、float、bool、numbers、string(字串)、tuple(元組)、unicode
@@ -17,6 +19,8 @@
   * `id()`：一個變數的地址
   * `type()`：每個變數的型別，不同的型別存放的資料也不同，如：int存放整數、float存放浮點數、list存放陣列等等...
   * `pop()`：把陣列的最後一個物件丟掉
+<br>
+Back to [Python_Basics](#Python_Basics)
 <br>
 
 ## 字串(String)
@@ -117,6 +121,8 @@ print('My name is %s and weight is %d kg!' % ('Zara', 21))
 ```
 > My name is Zara and weight is 21 kg!
 <br>
+Back to [Python_Basics](#Python_Basics)
+<br>
 
 ## 列表(List)
 * `append()`：新增 list 元素
@@ -151,6 +157,8 @@ print ('tuple 資料大小：', tupleA.__sizeof__())
 > list 資料大小： 9088 <br>
 > tuple 資料大小： 8024 <br>
 <br>
+Back to [Python_Basics](#Python_Basics)
+<br>
 
 ## 範圍(Range)：
 * Range 內的元素是不可變的，且可使用索引，通常用於迴圈(Loop)
@@ -176,6 +184,8 @@ range(len(state))
 > 8 <br>
 > range(0, 3) <br>
 <br>
+Back to [Python_Basics](#Python_Basics)
+<br>
 
 ## 集合(Set)：
 ```
@@ -188,6 +198,8 @@ print(x - y)  # 差集
 > {'o'} <br>
 > {'r', 'l', 'e', 'n', 'b', 'o', 'g', 'u'} <br>
 > {'r', 'u', 'n', 'b'} <br>
+<br>
+Back to [Python_Basics](#Python_Basics)
 <br>
 
 ## 字典(Dictionaries)：
@@ -216,6 +228,8 @@ print(dict)
 > {'Age': 1000, 'Class': 'apple'} <br>
 > {} <br>
 <br>
+Back to [Python_Basics](#Python_Basics)
+<br>
 
 ## 條件語法(If-else)
 * 任何非 0 和非空 (null) 值爲true，0 或者 null爲false
@@ -231,7 +245,8 @@ else:
     執行語句4……
 ```
 <br>
-
+Back to [Python_Basics](#Python_Basics)
+<br>
 
 ## 迴圈(While)
 * 用於循環執行程序，即在某條件下，循環執行某段程序，以處理需要重複處理的相同任務
@@ -276,6 +291,8 @@ print('end')
 > 5 <br>
 end
 <br>
+Back to [Python_Basics](#Python_Basics)
+<br>
 
 ## 迴圈(for)
 * 形式：
@@ -313,6 +330,8 @@ for num in range(0,20):   # 疊代 0 到 20 之間的數字
 > 17 是一個質數 <br>
 > 18 等於 2 * 9 <br>
 > 19 是一個質數 <br>
+<br>
+Back to [Python_Basics](#Python_Basics)
 <br>
 
 ## 函式(function)
@@ -383,6 +402,8 @@ print('函數外是全域變數 : ',total)
 ```
 > 函數內是區域變數:  30 <br>
 > 函數外是全域變數 :  0 <br>
+<br>
+Back to [Python_Basics](#Python_Basics)
 <br>
 
 ## 類別(class)
@@ -459,6 +480,8 @@ nana.printBWH()
 ```
 > 19.834710743801654 <br>
 > bust= 83,waist= 64,hip= 84 <br>
+<br>
+Back to [Python_Basics](#Python_Basics)
 <br>
 
 ## 備註
