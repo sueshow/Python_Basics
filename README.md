@@ -200,17 +200,21 @@ print(x - y)  # 差集
   * 不需唯一
   * 型態可取任何數值類型
 ```
-dict = {'Name': 'Soren', 'Age': 1000, 'Class': 'apple'}
+dict = {"Name": "Soren", "Age": 1000, "Class": "apple"}
  
-print('dict['Name']:',dict['Name'])
-print('dict['Age']:',dict['Age'])
+print('dict["Name"]:',dict["Name"])
+print('dict["Age"]:',dict["Age"])
 
-del dict['Name']  
+del dict["Name"]  
 print(dict)
 
 dict.clear() 
 print(dict) 
 ```
+> dict["Name"]: Soren <br>
+> dict["Age"]: 1000 <br>
+> {'Age': 1000, 'Class': 'apple'} <br>
+> {} <br>
 <br>
 
 ## 條件語法(If-else)
@@ -255,6 +259,22 @@ while 1:            # 循環條件爲1必定成立
         break
 print('end')
 ```
+> pass!! <br>
+> 2 <br>
+> pass!! <br>
+> 4 <br>
+> pass!! <br>
+> 6 <br>
+> pass!! <br>
+> 8 <br>
+> pass!! <br>
+> 10 <br>
+> 1 <br>
+> 2 <br>
+> 3 <br>
+> 4 <br>
+> 5 <br>
+end
 <br>
 
 ## 迴圈(for)
@@ -273,6 +293,26 @@ for num in range(0,20):   # 疊代 0 到 20 之間的數字
    else:                  # 循環的 else 部分
       print(num, '是一個質數')
 ```
+> 0 是一個質數 <br>
+> 1 是一個質數 <br>
+> 2 是一個質數 <br>
+> 3 是一個質數 <br>
+> 4 等於 2 * 2 <br>
+> 5 是一個質數 <br>
+> 6 等於 2 * 3 <br>
+> 7 是一個質數 <br>
+> 8 等於 2 * 4 <br>
+> 9 等於 3 * 3 <br>
+> 10 等於 2 * 5 <br> 
+> 11 是一個質數 <br>
+> 12 等於 2 * 6 <br>
+> 13 是一個質數 <br>
+> 14 等於 2 * 7 <br>
+> 15 等於 3 * 5 <br>
+> 16 等於 2 * 8 <br>
+> 17 是一個質數 <br>
+> 18 等於 2 * 9 <br>
+> 19 是一個質數 <br>
 <br>
 
 ## 函式(function)
@@ -306,6 +346,10 @@ def printinfo( prm1, *vartuple ):
 printinfo(10)
 printinfo(70,60,50)
 ```
+> 10 <br>
+> 70 <br>
+> 60 <br>
+> 50 <br>
 <br>
 
 * 匿名函數
@@ -320,6 +364,8 @@ sum = lambda arg1, arg2: arg1 + arg2;
 print('相加後的值爲 : ', sum( 10, 20 ))
 print('相加後的值爲 : ', sum( 20, 20 ))
 ```
+> 相加後的值爲 :  30 <br>
+> 相加後的值爲 :  40 <br>
 <br>
 
 * 全域變數和區域變數
@@ -335,6 +381,8 @@ def sum( prm1, prm2 ):
 sum(10,20);
 print('函數外是全域變數 : ',total)
 ```
+> 函數內是區域變數:  30 <br>
+> 函數外是全域變數 :  0 <br>
 <br>
 
 ## 類別(class)
@@ -358,6 +406,9 @@ print(Amy.age)
 Amy.age = 18
 print(Amy.age)
 ```
+> Amy <br>
+> 17 <br>
+> 18 <br>
 <br>
 
 2. 取用自己的方法
@@ -378,6 +429,9 @@ print(steve.height)
 luffy = Human(180,80)
 print(luffy.BMI())
 ```
+> 0 <br>
+> 0 <br>
+> 24.691358024691358 <br>
 <br>
 
 3.繼承：建構類別的時候透過 super().__ init__() 帶入父類別
@@ -403,6 +457,8 @@ print(nana.BMI())
 # 子類別 的方法 printBWH()
 nana.printBWH()
 ```
+> 19.834710743801654 <br>
+> bust= 83,waist= 64,hip= 84 <br>
 <br>
 
 ## 備註
