@@ -115,6 +115,7 @@ print ("你輸入的內容是: ", str1)
 ```
 print('My name is %s and weight is %d kg!' % ('Zara', 21)) 
 ```
+> My name is Zara and weight is 21 kg!
 <br>
 
 ## 列表(List)
@@ -131,6 +132,8 @@ print(test)
 del(test[0])
 print(test)
 ```
+> ['1991', 'Python'] <br>
+> ['Python'] <br>
 <br>
 
 ## 元組(Tuple)
@@ -145,6 +148,8 @@ tupleA = tuple(range(1000))
 print ('list 資料大小：', listA.__sizeof__())
 print ('tuple 資料大小：', tupleA.__sizeof__())
 ```
+> list 資料大小： 9088 <br>
+> tuple 資料大小： 8024 <br>
 <br>
 
 ## 範圍(Range)：
@@ -164,6 +169,12 @@ print(r[-1])
 state = ['New Jersey', 'Nevada', 'Montana']
 range(len(state))
 ```
+> range(0, 10, 2) <br>
+> [0, 2, 4, 6, 8] <br>
+> 1 <br>
+> range(0, 6, 2) <br>
+> 8 <br>
+> range(0, 3) <br>
 <br>
 
 ## 集合(Set)：
@@ -174,6 +185,9 @@ print(x & y)  # 交集
 print(x | y)  # 並集
 print(x - y)  # 差集
 ```
+> {'o'} <br>
+> {'r', 'l', 'e', 'n', 'b', 'o', 'g', 'u'} <br>
+> {'r', 'u', 'n', 'b'} <br>
 <br>
 
 ## 字典(Dictionaries)：
