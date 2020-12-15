@@ -33,9 +33,9 @@ print('更新字串: ', var1[:6]+'Basic!')
 print('L' in var01)
 print('l' in var01)
 ```
-> var01[0]: H
-> var02[1:5]: ytho
-> 更新字串: 
+> var01[0]: H <br>
+> var02[1:5]: ytho <br>
+> 更新字串: <br>
 <br>
 
 * 常用：
