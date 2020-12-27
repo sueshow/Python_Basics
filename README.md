@@ -233,7 +233,7 @@ print(x - y)  # 差集
 > {'r', 'u', 'n', 'b'} <br>
 <br>
 
-## 字典(Dictionaries)：
+## 字典(Dictionary)：
 * 字典的每個鍵值 key、value 對用冒號 `:` 分割，每個鍵值對之間用逗號 `,` 分割，整個字典包括在括號 `{}` 中，如dict1 ={key1:value1,key2:value2}
 * 能刪單一的元素，也能清空字典
 * key 
@@ -242,6 +242,16 @@ print(x - y)  # 差集
 * value 
   * 不需唯一
   * 型態可取任何數值類型
+```
+keys = [1,2,3]
+values = ['A','B','C']
+dict_ = dict( zip(keys,values) )
+dict_
+dict_ = { k:v for k, v in zip(keys,values) }
+dict_
+```
+> {1: 'A', 2: 'B', 3: 'C'}  <br>
+
 ```
 dict = {"Name": "Soren", "Age": 1000, "Class": "apple"}
  
@@ -258,7 +268,15 @@ print(dict)
 > dict["Age"]: 1000 <br>
 > {'Age': 1000, 'Class': 'apple'} <br>
 > {} <br>
-<br>
+
+* Add an item into the 1st location in a dictionary
+```
+dict_ = {1:'A',2:'B',3:'C'}
+dict_ = {4:'D', **dict_}
+dict_
+```
+> {4: 'D', 1: 'A', 2: 'B', 3: 'C'}  <br>
+
 
 ## 條件語法(If-else)
 * 任何非 0 和非空 (null) 值爲true，0 或者 null爲false
@@ -503,6 +521,29 @@ nana.printBWH()
 > bust= 83,waist= 64,hip= 84 <br>
 <br>
 
+## 其他(others)
+* `zip()` method takes iterables (can be zero or more), aggregates them in a tuple, and return it
+```
+A_list = ['A1','A2','A3','A4']
+B_list = ['B1','B2']
+for a, b in zip( A_list, B_list ):
+    print( a, b )
+```
+> A1 B1               <br>
+> A2 B2               <br>
+
+* `Enumerate()` method adds a counter to an iterable and returns it in a form of enumerate object
+```
+list_ = ['A','B','C']
+for i, a in enumerate( list_ ):
+    print( i, a )
+```
+> 0 A                 <br>
+> 1 B                 <br>
+> 2 C                 <br>
+<br>
+
+
 ## 備註
 * \(在行尾時)	續行符
 * \\	反斜槓符號
@@ -524,3 +565,4 @@ nana.printBWH()
 
 ## 參考資料：
 * https://github.com/AI-FREE-Team/Python-Basics
+* https://github.com/YenLinWu/Coding_Notes/tree/main/Python%20Syntax
