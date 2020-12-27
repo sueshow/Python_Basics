@@ -32,12 +32,14 @@ print('var02[1:5]: ', var02[1:5])
 print('更新字串: ', var01[:6]+'Basic!')
 print('L' in var01)
 print('l' in var01)
+print(var01[::-1])
 ```
 > var01[0]: H <br>
 > var02[1:5]: ytho <br>
 > 更新字串: Hello Basic! <br>
 > False <br>
 > True <br>
+> !dlroW olleH <br>
 <br>
 
 * 常用：
@@ -98,6 +100,7 @@ print ("你輸入的內容是: ", str1)
 ```
 <br>
 
+7. 重要
 * 在 Python 中，字串格式化使用與 C 中 sprintf 函數一樣的語法
   * %c：格式化字串及其 ASCII 碼
   * %s：格式化字串
@@ -115,7 +118,14 @@ print ("你輸入的內容是: ", str1)
 ```
 print('My name is %s and weight is %d kg!' % ('Zara', 21)) 
 ```
-> My name is Zara and weight is 21 kg! 
+> My name is Zara and weight is 21 kg! <br>
+```
+import string
+string.ascii_lowercase
+string.ascii_uppercase
+```
+> 'abcdefghijklmnopqrstuvwxyz' <br>
+> 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' <br>
 <br>
 
 ## 列表(List)
