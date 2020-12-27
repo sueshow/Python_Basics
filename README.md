@@ -130,9 +130,11 @@ string.ascii_uppercase
 
 ## 列表(List)
 * `append()`：新增 list 元素
-* `del()`：刪除 list 元素
+* `del()` or `remove()` or `pop()`=`list[:-1]`：刪除 list 元素
 * `+`：用於組合，`*`：用於重複
-* `reverse()`：反序
+* `reverse()` or `reversed()`：反序
+* `index()`
+* `insert()`：Add an element at the specified index (position) of a list 
 ```
 test=[]                 ## 空列表
 test.append('1991')     ## 使用 append() 新增元素
@@ -144,6 +146,37 @@ print(test)
 ```
 > ['1991', 'Python'] <br>
 > ['Python'] <br>
+
+* Convert list to string
+```
+list_ = ['A','B','C']
+string = '/'.join( list_ )
+string
+
+list_ = [1,2,3,4,5,6,7,8,9]
+str2 = ''.join( str(i) for i in list_ if i%2==0 ) 
+str2
+```
+> 'A/B/C'  <br>
+> '2468'   <br>
+
+* Pick up elements in a list
+```
+list_ = [1,2,3,4,5,6,7,8,9]
+print(list_[:3])  # or list_[:3:]
+print(list_[:-3])
+print(list_[::3])
+print(list_[::-3])
+print(list_[3::-1])
+print(list_[:3:-1])
+#list_[::-1]  # or list( reversed(list_) ) 
+```
+> [1, 2, 3]             <br>
+> [1, 2, 3, 4, 5, 6]    <br>
+> [1, 4, 7]             <br>
+> [9, 6, 3]             <br>
+> [4, 3, 2, 1]          <br>
+> [9, 8, 7, 6, 5]       <br>
 <br>
 
 ## 元組(Tuple)
