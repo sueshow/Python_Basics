@@ -1,5 +1,11 @@
 # Python_Basics
 
+## Package
+| Topic | Publication Date | 
+| ---------- | :-----------: | 
+|[![Colab](https://img.shields.io/badge/認識_NumPy-Google_Colab-yellow.svg)](https://colab.research.google.com/drive/1U4t18l4EzX4HNKHObMN3XmJ5FZcTfwW1?usp=sharing) |Apr 9, 2021|
+|[![Colab](https://img.shields.io/badge/認識_Pandas-Google_Colab-yellow.svg)](https://colab.research.google.com/drive/1YjrFIf6rbpvBm_5Cl_JT8jkGY-7c4dNq?usp=sharing)|Apr 9, 2021| 
+
 ## 運算子(Operator)
 * 基本運算：`+`、`-`、`*`
 * 常見的運算： `/` 為直接相除、 `//` 為取商、 `%` 為取餘數
