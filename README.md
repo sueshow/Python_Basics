@@ -3,7 +3,7 @@
 ## User Guide
 | 主題 | 介紹 | 
 | ---------- | :-----------: | 
-|[![Colab](https://img.shields.io/badge/認識_NumPy-Google_Colab-yellow.svg)](https://colab.research.google.com/drive/1U4t18l4EzX4HNKHObMN3XmJ5FZcTfwW1?usp=sharing) | Numpy 是一個提供矩陣運算非常非常非常好用的工具，<br> 雖然 python 處理大量資料時有 list 可以讓我們做到似矩陣的功能但 list 效能表現並不理想，<br> 而 Numpy 具備平行處理的能力，可以將操作動作一次套用在大型陣列上，幫助我們做更多方法建立多維數據以及矩陣運算 |
+|[![Colab](https://img.shields.io/badge/認識_NumPy-Google_Colab-yellow.svg)](https://colab.research.google.com/drive/1U4t18l4EzX4HNKHObMN3XmJ5FZcTfwW1?usp=sharing) | Numpy 是一個提供矩陣運算非常非常非常好用的工具，<br> 雖然 python 處理大量資料時有 list 可以讓我們做到似矩陣的功能但 list 效能表現並不理想，<br> 而 Numpy 具備平行處理的能力，可以將操作動作一次套用在大型陣列上，<br> 幫助我們做更多方法建立多維數據以及矩陣運算 |
 |[![Colab](https://img.shields.io/badge/認識_Pandas-Google_Colab-yellow.svg)](https://colab.research.google.com/drive/1YjrFIf6rbpvBm_5Cl_JT8jkGY-7c4dNq?usp=sharing)| Pandas 是一個基於 numpy 的 package，在處理數據方面非常的好用和簡單，透過標籤和索引。<br>pandas 的兩種特有的資料結構 DataFrame 與 Series | 
 <br>
 
