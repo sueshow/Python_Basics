@@ -1,6 +1,6 @@
 # Python_Basics
 
-## Package
+## User Guide
 | Topic |  
 | ---------- | 
 |[![Colab](https://img.shields.io/badge/認識_NumPy-yellow.svg)](https://numpy.org/doc/stable/user/index.html) |
