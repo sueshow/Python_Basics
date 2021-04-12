@@ -1,20 +1,11 @@
 # Python_Basics
 
 ## User Guide
-<table border="1" width="30%">
-    <tr>
-        <th width="10%">主題</a>
-        <th width="20%">說明</a>
-    </tr>
-    <tr>
-        <td> ![[Colab](https://img.shields.io/badge/認識_NumPy-yellow.svg)](https://numpy.org/doc/stable/user/index.html) </td>
-        <td> </td>
-    </tr>
-    <tr>
-        <td> ![[Colab](https://img.shields.io/badge/認識_Pandas-yellow.svg)](https://pandas.pydata.org/docs/user_guide/index.html) </td>
-        <td> Pandas 是一個基於 numpy 的 package，在處理數據方面非常的好用和簡單，透過標籤和索引，Pandas 讓我們可以非常輕易的處理數據，在學習 pandas 之前我們要先知道 pandas 的兩種特有的資料結構 DataFrame 與 Series </td>
-    </tr>
-</table>
+| 主題 | 介紹 | 
+| ---------- | :-----------: | 
+|[![Colab](https://img.shields.io/badge/認識_NumPy-Google_Colab-yellow.svg)](https://colab.research.google.com/drive/1U4t18l4EzX4HNKHObMN3XmJ5FZcTfwW1?usp=sharing) |  |
+|[![Colab](https://img.shields.io/badge/認識_Pandas-Google_Colab-yellow.svg)](https://colab.research.google.com/drive/1YjrFIf6rbpvBm_5Cl_JT8jkGY-7c4dNq?usp=sharing)| 
+ Pandas 是一個基於 numpy 的 package，在處理數據方面非常的好用和簡單，透過標籤和索引。<br>pandas 的兩種特有的資料結構 DataFrame 與 Series | 
 <br>
 
 ## 運算子(Operator)
