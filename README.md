@@ -1,12 +1,5 @@
 # Python_Basics
 
-## User Guide
-| Topic |  
-| ---------- | 
-|[![Colab](https://img.shields.io/badge/認識_NumPy-yellow.svg)](https://numpy.org/doc/stable/user/index.html) |
-|[![Colab](https://img.shields.io/badge/認識_Pandas-yellow.svg)](https://pandas.pydata.org/docs/user_guide/index.html)| 
-<br>
-
 ## 運算子(Operator)
 * 基本運算：`+`、`-`、`*`
 * 常見的運算： `/` 為直接相除、 `//` 為取商、 `%` 為取餘數
