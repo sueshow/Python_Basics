@@ -5,8 +5,8 @@
   * _(只有一個底線)：變數名稱不重要，之後用不到，通常在不得已的時候使用
   * _命名：具有私有性(private)，隱藏此物件，不輕易被使用
   * __命名：具有唯一性，無法被修改，在 class 中有作用，前面有雙底線就會被改名
-  * 命名_：避開之前已經使用過的變數名
-  * __命名__：python本身就有，不會自己創造，稱為 dunder methods
+  * 命名_：避免與 Python 的 built-in keywords (如：from等) 或 built-in functions (如：list等) 使用過相同的變數名
+  * __命名__：這是留給Python builtin 的 methods 或是 variables，稱為 dunder methods
 * 變數的命名
   * 規則
     * 名稱只能由大小寫字母、數字、下底線、中文來命名變數
@@ -663,5 +663,6 @@ for i, a in enumerate( list_ ):
 <br>
 
 ## 參考資料：
+* https://note.artchiu.org/2019/02/22/python-__%E5%BA%95%E7%B7%9A__-%E7%9A%84%E6%84%8F%E7%BE%A9/
 * https://github.com/AI-FREE-Team/Python-Basics
 * https://github.com/YenLinWu/Coding_Notes/tree/main/Python%20Syntax
