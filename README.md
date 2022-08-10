@@ -12,7 +12,89 @@
     * 名稱不能與Python內建的保留字相同
     * 建議以英文為變數名稱比較好，可以減少未知的錯誤
   * 保留字
-<>
+<table border="1" width="12%">
+    <tr>
+        <th width="2%"> 	</a>
+        <th width="2%">  </a>
+        <th width="2%">  </a>
+        <th width="2%"> 	</a>
+        <th width="2%">  </a>
+        <th width="2%">  </a>
+    </tr>
+    <tr>
+        <td> acos </td>
+        <td> and </td>
+        <td> array </td>
+        <td> asin </td>
+        <td> assert </td>
+        <td> atan </td>
+    </tr>  
+    <tr>
+        <td> break </td>
+        <td> class </td>
+        <td> close </td>
+        <td> continue </td>
+        <td> cos </td>
+        <td> Data </td>
+    </tr>  
+    <tr>
+        <td> def </td>
+        <td> del </td>
+        <td> e </td>
+        <td> elif </td>
+        <td> else </td>
+        <td> except </td>
+    </tr> 
+    <tr>
+        <td> exec </td>
+        <td> exp </td>
+        <td> fabs </td>
+        <td> flost </td>
+        <td> finally </td>
+        <td> floor </td>
+    </tr>
+    <tr>
+        <td> for </td>
+        <td> from </td>
+        <td> global </td>
+        <td> if </td>
+        <td> import </td>
+        <td> in </td>
+    </tr> 
+    <tr>
+        <td> input </td>
+        <td> int </td>
+        <td> is </td>
+        <td> lambda </td>
+        <td> log </td>
+        <td> log10 </td>
+    </tr> 
+    <tr>
+        <td> not </td>
+        <td> open </td>
+        <td> or </td>
+        <td> pass </td>
+        <td> pi </td>
+        <td> print </td>
+    </tr>
+    <tr>
+        <td> raise </td>
+        <td> range </td>
+        <td> return </td>
+        <td> sin </td>
+        <td> sqrt </td>
+        <td> tan </td>
+    </tr>
+    <tr>
+        <td> try </td>
+        <td> type </td>
+        <td> while </td>
+        <td> write </td>
+        <td> zeros </td>
+        <td>  </td>
+    </tr>
+</table>
+<br>
 
 ## 運算子(Operator)
 * 基本運算：`+`、`-`、`*`
