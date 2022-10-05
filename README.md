@@ -784,3 +784,4 @@
 * [AI-FREE-Team / Python-Basics](https://github.com/AI-FREE-Team/Python-Basics)
 * [YenLinWu / Coding_Notes](https://github.com/YenLinWu/Coding_Notes/tree/main/Python%20Syntax)
 * [Python 文字檔案的讀取和儲存 By 彭彭](https://www.youtube.com/watch?v=C4OkV6DrVRs)
+* [Python 集合、字典的基本運算 - Set、Dictionary By 彭彭](https://www.youtube.com/watch?v=L3-KuGYhw78&list=PL-g0fdC5RMboYEyt6QS2iLb_1m7QcgfHk&index=5)
