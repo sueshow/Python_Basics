@@ -168,7 +168,6 @@
     > 8  64  512 <br>
     > 9  81  729 <br>
     >10 100 1000 <br>
-<br>
   2. 括號及其裏面的字串將會被 `format()` 中的參數替換
     ```
     print('{0} 和 {1}'.format('Google', 'Intel'))
@@ -179,7 +178,6 @@
     > Google 和 Intel <br> 
     > Intel 和 Google <br>
     > Jamie位置： Taiwan/Taipei <br>
-<br>
   3. !a (使用 `ascii()`), !s (使用 `str()`) 和 !r (使用 `repr()`) 可以用於在格式化某個值之前對其進行轉化
   4. {0:.3f}：小數點後三位
   5. 使用方括號 [] 來訪問鍵值
@@ -197,13 +195,11 @@
     ```
     > March: 3; August: 8; July: 7 <br>
     > March: 3; August: 8; July: 7 <br>
-<br>
   6. 輸入 
     ```
     str1 = input("請輸入：");
     print ("你輸入的內容是: ", str1)
     ```
-<br>
   7. 重要
     * 在 Python 中，字串格式化使用與 C 中 sprintf 函數一樣的語法
       * %c：格式化字串及其 ASCII 碼
@@ -377,7 +373,6 @@ print(x - y)  # 差集
     > dict["Age"]: 1000 <br>
     > {'Age': 1000, 'Class': 'apple'} <br>
     > {} <br>
-
 * Add an item into the 1st location in a dictionary
   ```
   dict_ = {1:'A',2:'B',3:'C'}
@@ -497,8 +492,6 @@ print(x - y)  # 差集
      function_suite
      return [expression]
   ```
-  <br>
-
 * 參數類型：
   * 必備參數：以正確的順序傳入函數
   * 關鍵字參數：使用關鍵字參數允許函數時，參數的順序與聲明時不一致
@@ -522,9 +515,7 @@ print(x - y)  # 差集
     > 10 <br>
     > 70 <br>
     > 60 <br>
-    > 50 
-<br>
-
+    > 50 <br>
 * 匿名函數
   * 使用 lambda 來創建匿名函數
   * 形式：
@@ -538,9 +529,7 @@ print(x - y)  # 差集
     print('相加後的值爲 : ', sum( 20, 20 ))
     ```
     > 相加後的值爲 :  30 <br>
-    > 相加後的值爲 :  40 
-<br>
-
+    > 相加後的值爲 :  40 <br>
 * 全域變數和區域變數
   * 定義在函數內部的變量擁有一個區域作用域，定義在函數外的擁有全域作用域
     ```
@@ -582,9 +571,7 @@ print(x - y)  # 差集
     ```
     > Amy <br>
     > 17 <br>
-    > 18 
-<br>
-
+    > 18 <br>
   2. 取用自己的方法
     ```
     class Human:
@@ -605,9 +592,7 @@ print(x - y)  # 差集
     ```
     > 0 <br>
     > 0 <br>
-    > 24.691358024691358 
-<br>
-
+    > 24.691358024691358 <br>
   3. 繼承：建構類別的時候透過 super().__ init__() 帶入父類別
     ```
     class Woman(Human):
@@ -632,7 +617,7 @@ print(x - y)  # 差集
     nana.printBWH()
     ```
     > 19.834710743801654 <br>
-    > bust= 83,waist= 64,hip= 84 
+    > bust= 83,waist= 64,hip= 84 <br>
 <br>
 
 
@@ -655,7 +640,7 @@ print(x - y)  # 差集
   ```
   > 0 A                 <br>
   > 1 B                 <br>
-  > 2 C                 
+  > 2 C                 <br>
 <br>
 
 
