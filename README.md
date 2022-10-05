@@ -152,80 +152,80 @@
 
 * 常用：
   1. 字符串對象的 `rjust()` 可將字符串靠右，並在左邊填充空格，類似的方法如 `ljust()`、`center()`、`zfill()`：在數字的左邊填充 0
-    ```
-    for x in range(1, 11):
-       print(repr(x).rjust(2), repr(x*x).rjust(3), end=' ')
-        # 注意前一行 'end' 的使用
-       print(repr(x*x*x).rjust(4)) 
-    ``` 
-    > 1   1    1 <br>
-    > 2   4    8 <br>
-    > 3   9   27 <br>
-    > 4  16   64 <br>
-    > 5  25  125 <br>
-    > 6  36  216 <br>
-    > 7  49  343 <br>
-    > 8  64  512 <br>
-    > 9  81  729 <br>
-    >10 100 1000 <br>
+     ```
+     for x in range(1, 11):
+        print(repr(x).rjust(2), repr(x*x).rjust(3), end=' ')
+         # 注意前一行 'end' 的使用
+        print(repr(x*x*x).rjust(4)) 
+     ``` 
+     > 1   1    1 <br>
+     > 2   4    8 <br>
+     > 3   9   27 <br>
+     > 4  16   64 <br>
+     > 5  25  125 <br>
+     > 6  36  216 <br>
+     > 7  49  343 <br>
+     > 8  64  512 <br>
+     > 9  81  729 <br>
+     >10 100 1000 <br>
   2. 括號及其裏面的字串將會被 `format()` 中的參數替換
-    ```
-    print('{0} 和 {1}'.format('Google', 'Intel'))
-    print('{1} 和 {0}'.format('Google', 'Intel'))
+     ```
+     print('{0} 和 {1}'.format('Google', 'Intel'))
+     print('{1} 和 {0}'.format('Google', 'Intel'))
 
-    print('{name}位置： {address}'.format(name='Jamie', address='Taiwan/Taipei'))
-    ```
-    > Google 和 Intel <br> 
-    > Intel 和 Google <br>
-    > Jamie位置： Taiwan/Taipei <br>
+     print('{name}位置： {address}'.format(name='Jamie', address='Taiwan/Taipei'))
+     ```
+     > Google 和 Intel <br> 
+     > Intel 和 Google <br>
+     > Jamie位置： Taiwan/Taipei <br>
   3. !a (使用 `ascii()`), !s (使用 `str()`) 和 !r (使用 `repr()`) 可以用於在格式化某個值之前對其進行轉化
   4. {0:.3f}：小數點後三位
   5. 使用方括號 [] 來訪問鍵值
-    ```
-    import math
-    print('數學pi的值近似爲： {!r}。'.format(math.pi))
-    print('pi近似值爲 {0:.3f}。'.format(math.pi))
-    ```
-    > 數學pi的值近似爲： 3.141592653589793 <br>
-    > pi近似值爲 3.142 <br>
-    ```
-    table = {'August': 8, 'March': 3, 'July': 7}
-    print('March: {0[March]:d}; August: {0[August]:d}; July: {0[July]:d}'.format(table))
-    print('March: {March:d}; August: {August:d}; July: {July:d}'.format(**table))
-    ```
-    > March: 3; August: 8; July: 7 <br>
-    > March: 3; August: 8; July: 7 <br>
+     ```
+     import math
+     print('數學pi的值近似爲： {!r}。'.format(math.pi))
+     print('pi近似值爲 {0:.3f}。'.format(math.pi))
+     ```
+     > 數學pi的值近似爲： 3.141592653589793 <br>
+     > pi近似值爲 3.142 <br>
+     ```
+     table = {'August': 8, 'March': 3, 'July': 7}
+     print('March: {0[March]:d}; August: {0[August]:d}; July: {0[July]:d}'.format(table))
+     print('March: {March:d}; August: {August:d}; July: {July:d}'.format(**table))
+     ```
+     > March: 3; August: 8; July: 7 <br>
+     > March: 3; August: 8; July: 7 <br>
   6. 輸入 
-    ```
-    str1 = input("請輸入：");
-    print ("你輸入的內容是: ", str1)
-    ```
+     ```
+     str1 = input("請輸入：");
+     print ("你輸入的內容是: ", str1)
+     ```
   7. 重要
-    * 在 Python 中，字串格式化使用與 C 中 sprintf 函數一樣的語法
-      * %c：格式化字串及其 ASCII 碼
-      * %s：格式化字串
-      * %d：格式化整數
-      * %u：格式化無符號整型
-      * %o：格式化無符號八進位數
-      * %x：格式化無符號十六進位數
-      * %X：格式化無符號十六進位數(大寫)
-      * %f：格式化浮點數，可指定小數點後的位數
-      * %e：用科學計數法格式化浮點數
-      * %E：同 %e，科學計數法格式化浮點數
-      * %g：%f 和 %e 的簡寫
-      * %G：%F 和 %E 的簡寫
-      * %p：用十六進位數格式化變量的地址
-      ```
-      print('My name is %s and weight is %d kg!' % ('Zara', 21)) 
-      ```
-      > My name is Zara and weight is 21 kg! <br>
-      ```
-      import string
-      string.ascii_lowercase
-      string.ascii_uppercase
-      ```
-      > 'abcdefghijklmnopqrstuvwxyz' <br>
-      > 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' <br>
+     * 在 Python 中，字串格式化使用與 C 中 sprintf 函數一樣的語法
+       * %c：格式化字串及其 ASCII 碼
+       * %s：格式化字串
+       * %d：格式化整數
+       * %u：格式化無符號整型
+       * %o：格式化無符號八進位數
+       * %x：格式化無符號十六進位數
+       * %X：格式化無符號十六進位數(大寫)
+       * %f：格式化浮點數，可指定小數點後的位數
+       * %e：用科學計數法格式化浮點數
+       * %E：同 %e，科學計數法格式化浮點數
+       * %g：%f 和 %e 的簡寫
+       * %G：%F 和 %E 的簡寫
+       * %p：用十六進位數格式化變量的地址
+         ```
+         print('My name is %s and weight is %d kg!' % ('Zara', 21)) 
+         ```
+         > My name is Zara and weight is 21 kg! <br>
+         ```
+         import string
+         string.ascii_lowercase
+         string.ascii_uppercase
+         ```
+         > 'abcdefghijklmnopqrstuvwxyz' <br>
+         > 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' <br>
 <br>
 
 
@@ -552,72 +552,72 @@ print(x - y)  # 差集
 * Python 是物件導向的程式語言 (Object-oriented programming)
 * 具有屬性與方法
   1. 基本屬性
-    ```
-    # 建構一個 family 類別
-    class family():
-      # 函式 __init__ 會自動執行
-      def __init__(self,name,age):
-      # self是class本身,所以第一個不用更動,而這邊新增兩個屬性,一個是名字,另一個是年齡
-        self.name = name
-        self.age = age
-    
-      Amy = family('Amy',17)
-      print(Amy.name)
-      print(Amy.age)
+     ```
+     # 建構一個 family 類別
+     class family():
+       # 函式 __init__ 會自動執行
+       def __init__(self,name,age):
+       # self是class本身,所以第一個不用更動,而這邊新增兩個屬性,一個是名字,另一個是年齡
+         self.name = name
+         self.age = age
+     
+       Amy = family('Amy',17)
+       print(Amy.name)
+       print(Amy.age) 
 
-      # 可以透過這樣修改實體的屬性
-      Amy.age = 18
-      print(Amy.age)
-    ```
-    > Amy <br>
-    > 17 <br>
-    > 18 <br>
+       # 可以透過這樣修改實體的屬性
+       Amy.age = 18
+       print(Amy.age)
+     ```
+     > Amy <br>
+     > 17 <br>
+     > 18 <br>
   2. 取用自己的方法
-    ```
-    class Human:
-      def __init__(self,h=0,w=0):
-        # 可在參數後面帶值
-        self.height=h
-        self.weight=w
-      def BMI(self):
-        return self.weight / ((self.height/100)**2)
+     ```
+     class Human:
+       def __init__(self,h=0,w=0):
+         # 可在參數後面帶值
+         self.height=h
+         self.weight=w
+       def BMI(self):
+         return self.weight / ((self.height/100)**2)
 
-      steve = Human() 
-      # 這樣即使在宣告的時候沒有帶參數也可以建立一個實體
-      print(steve.height)
-      print(steve.height)
+       steve = Human() 
+       # 這樣即使在宣告的時候沒有帶參數也可以建立一個實體 
+       print(steve.height)
+       print(steve.height)
       
-    luffy = Human(180,80)
-    print(luffy.BMI())
-    ```
-    > 0 <br>
-    > 0 <br>
-    > 24.691358024691358 <br>
+     luffy = Human(180,80)
+     print(luffy.BMI())
+     ```
+     > 0 <br>
+     > 0 <br>
+     > 24.691358024691358 <br>
   3. 繼承：建構類別的時候透過 super().__ init__() 帶入父類別
-    ```
-    class Woman(Human):
-      def __init__(self,h,w,bust=0,waist=0,hip=0):
-        super().__init__(h,w)
-    ```
-    ```
-    # 'Human' 有的屬性及方法會被 'Woman' 繼承
-    class Woman(Human):
-        def __init__(self,h,w,bust=0,waist=0,hip=0):
-            super().__init__(h,w)
-            self.bust=bust
-            self.waist=waist
-            self.hip=hip
-        def printBWH(self):
-            print('bust= {},waist= {},hip= {}'.format(self.bust,self.waist,self.hip))
-        
-    nana = Woman(165,54,83,64,84) 
-    # 父類別 的方法 BMI()
-    print(nana.BMI())
-    # 子類別 的方法 printBWH()
-    nana.printBWH()
-    ```
-    > 19.834710743801654 <br>
-    > bust= 83,waist= 64,hip= 84 <br>
+     ```
+     class Woman(Human):
+       def __init__(self,h,w,bust=0,waist=0,hip=0):
+         super().__init__(h,w)
+     ```
+     ```
+     # 'Human' 有的屬性及方法會被 'Woman' 繼承
+     class Woman(Human):
+         def __init__(self,h,w,bust=0,waist=0,hip=0):
+             super().__init__(h,w)
+             self.bust=bust
+             self.waist=waist
+             self.hip=hip
+         def printBWH(self):
+             print('bust= {},waist= {},hip= {}'.format(self.bust,self.waist,self.hip))
+         
+     nana = Woman(165,54,83,64,84) 
+     # 父類別 的方法 BMI()
+     print(nana.BMI())
+     # 子類別 的方法 printBWH()
+     nana.printBWH()
+     ```
+     > 19.834710743801654 <br>
+     > bust= 83,waist= 64,hip= 84 <br>
 <br>
 
 
@@ -645,22 +645,22 @@ print(x - y)  # 差集
 
 
 ## 備註
-* \(在行尾時)	續行符
-* \\	反斜槓符號
-* \'	單引號
-* \"	雙引號
-* \a	響鈴
-* \b	退格(Backspace)
-* \e	轉義
-* \000	空
-* \n	換行
-* \v	縱向製表符
-* \t	橫向製表符
-* \r	回車
-* \f	換頁
-* \oyy	八進制數，yy代表的字符，例如：\o12代表換行
-* \xyy	十六進制數，yy代表的字符，例如：\x0a代表換行
-* \other	其它的字符以普通格式輸出
+* \(在行尾時)：續行符
+* \\：反斜槓符號
+* \'：單引號
+* \"：雙引號
+* \a：響鈴
+* \b：退格(Backspace)
+* \e：轉義
+* \000：空
+* \n：換行
+* \v：縱向製表符
+* \t：橫向製表符
+* \r：回車
+* \f：換頁
+* \oyy：八進制數，yy代表的字符，例如：\o12代表換行
+* \xyy：十六進制數，yy代表的字符，例如：\x0a代表換行
+* \other：其它的字符以普通格式輸出
 <br>
 
 
