@@ -399,21 +399,38 @@
 
 
 ## 集合(Set)：
-```
-x = set('runoob')
-y = set('google')
-print(x & y)  # 交集
-print(x | y)  # 並集
-print(x - y)  # 差集
-```
-> {'o'} <br>
-> {'r', 'l', 'e', 'n', 'b', 'o', 'g', 'u'} <br>
-> {'r', 'u', 'n', 'b'} <br>
+* 運算
+  * 判斷資料是否存在：使用 in 和 not in 運算符號
+  * 交集、聯集：使用 & 和 | 運算符號
+  * 差集、反交集：使用 - 和 ^ 運算符號 
+  * 字串拆解為集合：set(字串)
+    ```
+    x = set('runoob')
+    y = set('google')
+    print(x & y)  # 交集
+    print(x | y)  # 並集
+    print(x - y)  # 差集
+    ```
+    > {'o'} <br>
+    > {'r', 'l', 'e', 'n', 'b', 'o', 'g', 'u'} <br>
+    > {'r', 'u', 'n', 'b'} <br>
+* 集合運算
+  ```
+  s1 = {3,4,5}
+  print(10 not in s1)
+    
+  s2 = {4,5,6,7}
+  s3 = s1 & s2      # 交集：取兩個集合中、相同的資料
+  s3 = s1 | s2      # 聯集：取兩個集合中的所有資料，但不重複取
+  s3 = s1 - s2      # 差集：從s1中減去和s2重疊的部分
+  s3 = s1 ^ s2      # 反交集：取兩個集合中，不重疊的部分
+  ```
 <br>
 
 
 ## 字典(Dictionary)：
-* 字典的每個鍵值 key、value 對用冒號 `:` 分割，每個鍵值對之間用逗號 `,` 分割，整個字典包括在括號 `{}` 中，如dict1 ={key1:value1,key2:value2}
+* 基本觀念：字典的每個鍵值 key、value 對用冒號 `:` 分割，每個鍵值對之間用逗號 `,` 分割，整個字典包括在括號 `{}` 中，如 dict1 = {key1:value1, key2:value2}
+* 語法：`字典[Key] = Value`
 * 能刪單一的元素，也能清空字典
 * key 
   * 唯一的：不允許同一個 key 出現兩次。如果同一個 key 給兩次 value，後一個 value 會被記住
@@ -434,10 +451,10 @@ print(x - y)  # 差集
     ```
     dict = {"Name": "Soren", "Age": 1000, "Class": "apple"}
  
-    print('dict["Name"]:',dict["Name"])
-    print('dict["Age"]:',dict["Age"])
+    print('dict['Name']:', dict['Name'])
+    print('dict['Age']:', dict['Age'])
 
-    del dict["Name"]  
+    del dict['Name']  
     print(dict)
 
     dict.clear() 
@@ -447,13 +464,37 @@ print(x - y)  # 差集
     > dict["Age"]: 1000 <br>
     > {'Age': 1000, 'Class': 'apple'} <br>
     > {} <br>
-* Add an item into the 1st location in a dictionary
+* 運算
+  * 判斷資料是否存在：使用 in 和 not in 運算符號
+  * 刪除鍵值對：使用 del 運算關鍵字
+  * 以列表的資料為基礎來建立字典
+  * Add an item into the 1st location in a dictionary
+    ```
+    dict_ = {1:'A',2:'B',3:'C'}
+    dict_ = {4:'D', **dict_}
+    dict_
+    ```
+    > {4: 'D', 1: 'A', 2: 'B', 3: 'C'}  
+* 字典運算：key-value 配對
   ```
-  dict_ = {1:'A',2:'B',3:'C'}
-  dict_ = {4:'D', **dict_}
-  dict_
+  dic = {"apple":"蘋果", "bug":"蟲蟲"}
+  print(dic['apple'])
+  dic['apple'] = '小蘋果'
+  print(dic['apple'])
+  
+  # 判斷 key 是否存在
+  print('apple' in dic)
+  print('test' in dic)
+  
+  # 刪除字典中的鍵值對
+  print(dic)
+  del dic['apple']
+  print(dic)
+  
+  # 以列表的資料為基礎來建立字典
+  dic = {x:x*2 for x in [3,4,5]}
+  print(dic)
   ```
-  > {4: 'D', 1: 'A', 2: 'B', 3: 'C'}  
 <br>
 
 
