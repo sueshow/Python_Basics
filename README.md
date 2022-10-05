@@ -157,7 +157,10 @@
   * 使用 JSON 格式讀取、複寫檔案
     * JSON 格式
       ```
-      {"name":"My Name","version":"1.2.5"}
+      {
+          "name":"My Name",
+          "version":"1.2.5"
+      }
       ```
     * 讀取資料：從檔案中讀取 JSON 資料，放入變數 data 裡面
       ```
