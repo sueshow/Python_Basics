@@ -759,6 +759,24 @@
 <br>
 
 
+## 程式錯誤
+* 類型
+  * 語法錯誤：Syntax Error
+  * 型態錯誤：ValueError
+  * 陣列(List)長度錯誤：IndexError
+  * 任何意外錯誤：Exception
+* 例外 Exception：在某些狀況下會出現錯誤
+  * 事先預想、處理可能發生的例外
+    ```
+    try:
+       可能會發生例外的程式區塊
+    except Exception:
+       若上述 try 區塊的程式發生例外
+       跳進此區塊中的程式，繼續執行
+    ```
+<br>
+
+
 ## 備註
 * \(在行尾時)：續行符
 * \\：反斜槓符號
